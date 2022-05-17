@@ -8,6 +8,7 @@ var enemyName = "Roborto";
 var enemyHealth = 50;
 var enemyAttack = 12;
 
+
 var fight = function () {
   // Alert players that they are starting the round
   window.alert("Welcome to Robot Gladiators!");
@@ -24,7 +25,26 @@ var fight = function () {
   playerHealth = playerHealth - enemyHealth;
 
   // Log a resulting message to the console so we know that it worked.
-  console.log(enemyName + "attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.")
+  console.log(
+    enemyName + "attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.")
+
+  console.log(
+    playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
+  );
+
+  //check players health
+  if (playerHealth <= 0) {
+    window.alert(playerName + " has died!");
+  } else {
+    window.alert(playerName + " still has " + playerHealth + " health left.");
+  }
+
+  //check enemy's health
+  if (enemyHealth <= 0) {
+    window.alert(enemyName + " has died!");
+  } else {
+    window.alert(enemyName + " still has " + enemyHealth + " health left.");
+  }
 };
 
 fight();
