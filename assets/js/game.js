@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-var playerName = window.prompt("What is your robot's name?");
-var playerHealth = 100;
-var playerAttack = 10;
-var playerMoney = 10;
-
-var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
-var enemyHealth = 50;
-var enemyAttack = 12;
-
-var fight = function (enemyName) {
-=======
 var fight = function (enemy) {
->>>>>>> develop
   //repeat and execute as long as the enemy-robot is alive
   while (playerInfo.health > 0 && enemy.health > 0) {
     // ask player if they'd like to fight or run
